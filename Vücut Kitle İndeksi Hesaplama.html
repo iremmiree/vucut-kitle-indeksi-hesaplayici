@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vücut Kitle İndeksi Hesaplama</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+</head>
+<body>
+        <H1>VÜCUT KİTLE İNDEKSİ HESAPLAMA</H1>
+
+<div class="form-cont">
+    <form action="">
+        <div>
+            <label for="length">Boy (cm)</label>
+            <input type="number" class="bmi length" id="length" name="length" min="0" >
+        </div>
+        <div>
+            <label for="kilo">Kilo (kg)</label>
+            <input type="number" class="bmi kilo"  id="kilo" name="kilo" min="0" >
+        </div>
+        <div style="width: 100%;">
+            <button class="btn "type="button">Gönder</button>
+        </div>
+    </form>
+</div>
+
+<div class="result-cont">
+    <div class="result-box">
+        <div class="result">
+            <p style="margin:0;">VKİ değeriniz:</p>
+            <p class="result-value" style="font-size: 60px; margin: 0;"></p>
+            <p class="result-status" style="margin:0; font-weight: 600; color: brown;"></p>
+        </div>
+
+        <div class="exp-box"></div>
+    </div>
+</div>
+    <script src='js/main.js'></script>
+</body>
+</html>

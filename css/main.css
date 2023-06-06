@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #fdf2ff;
+}
+h1{
+    margin-top: 0;
+    text-align: center;
+    font-family: fantasy;
+    font-weight: 200;
+    color: #ff5555;
+}
+.form-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-cont form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.form-cont form div{
+    margin: 15px 0px;
+}
+input{
+    width: 120px;
+    border:1px solid #777777;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+    outline: 0;
+}
+label{
+    display: inline-block;
+    width: 70px;
+}
+.result{
+    display: none;
+    background-color: aliceblue;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 5px solid #ff0000;
+    border-radius: 50%;
+    padding: 34px;
+    width: 200px;
+}
+.btn{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(18, 255, 109);
+}
+.btn:hover{
+    background-color: rgb(114, 114, 255);
+}
+.btn:focus{
+    scale: 0.98;
+}
+.result-cont::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    height: calc(100vh - 300px);
+    background-image: url("bmi.png");
+    background-position:  center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.result-cont{
+    display: flex;
+    position: relative;
+    width: 100%;
+    min-height: calc(100vh - 300px);
+    align-items: center;
+    justify-content: center;
+}
+.result-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    backdrop-filter: blur(7px);
+}
+    @media (max-width: 690px) {
+        .result-box{
+            flex-direction: column;
+        }
+    }
+ul{
+    list-style-type: "💪🏼";
+    list-style-position: inside;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight:400;
+}
+
+
+
